@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Haunted House Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🏚️ Haunted House Adventure</h1>
+  <audio id="bgMusic" src="assets/bg-music.mp3" loop autoplay></audio>
+
+  <div id="game-container">
+    <img id="sceneImage" src="assets/images/house.png" alt="Scene Image" />
+    <p id="storyText">You stand before a haunted house. Will you enter?</p>
+    <div id="buttons">
+      <button onclick="enterLibrary()">📚 Go to Library</button>
+      <button onclick="enterBasement()">🕳️ Go to Basement</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

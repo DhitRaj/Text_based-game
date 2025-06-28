@@ -1,0 +1,117 @@
+/* Base Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  background-color: #222;
+  padding: 15px;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+#game-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sceneImage {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #444;
+}
+
+#storyText {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+button {
+  background: #660000;
+  color: #fff;
+  border: none;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #880000;
+}
+
+/* Media Queries */
+
+/* Tablets and up */
+@media (min-width: 768px) {
+  #storyText {
+    font-size: 1.4rem;
+    max-width: 600px;
+  }
+
+  #buttons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  button {
+    flex: 1;
+    min-width: 120px;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  #game-container {
+    flex-direction: column;
+  }
+#sceneImage {
+  width: 100%;
+  max-width: 500px;
+  border: 8px solid #2a0a0a; /* deep red/black border */
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.8);
+  margin-top: 15px;
+  background-color: #111;
+  transition: transform 0.3s ease;
+}
+
+#sceneImage:hover {
+  transform: scale(1.02); /* subtle zoom on hover */
+}
+
+
+  #buttons {
+    max-width: 600px;
+  }
+}
+
+@keyframes flicker {
+  0%   { box-shadow: 0 0 30px rgba(255, 0, 0, 0.3); }
+  50%  { box-shadow: 0 0 40px rgba(255, 255, 255, 0.1); }
+  100% { box-shadow: 0 0 30px rgba(255, 0, 0, 0.3); }
+}
+
+#sceneImage {
+  animation: flicker 4s infinite;
+}
