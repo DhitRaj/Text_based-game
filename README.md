@@ -9,9 +9,7 @@ A browser-based text adventure game built using JavaScript, HTML, and CSS. Explo
 - Responsive design for desktop and mobile
 - Easily extendable story structure
 
-## Demo
 
-> _Add a screenshot or a link to a live demo here if available._
 
 ## Getting Started
 
